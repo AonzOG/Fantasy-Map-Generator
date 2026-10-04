@@ -56,7 +56,7 @@ The data layer must contain no logic and no rendering code. Generators implement
 
 
 # AonzOG's Fork - 04/10/2026
-## Azgaar's Fantasy Map Generator Installer.Bat
+## Azgaar's Fantasy Map Generator.Bat
 
 Few Clicks Installation
 
