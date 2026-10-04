@@ -2,42 +2,83 @@
 
 ## AonzOG's Fork - 04/10/2026
 
-This fork keeps **Azgaar's Fantasy Map Generator** as the underlying project and adds a Windows setup helper: **`Azgaar's Fantasy Map Generator.Bat`**.
+This fork keeps **Azgaar's Fantasy Map Generator** as the underlying project and adds two Windows convenience tools:
+
+- 🛠️ **`Azgaar's Fantasy Map Generator.Bat`** — GUI installer, repair and uninstall tool
+- ▶️ **`Start Azgaar's Fantasy Map Generator.Bat`** — one-click launcher for starting the installed generator
+
+The aim is simple: **install and run the local version of Fantasy Map Generator with a few clicks instead of setting everything up manually through a terminal.**
 
 ### Few-Click Windows Installation
 
-Double-click the `.Bat` file to open a GUI setup wizard instead of manually setting up the project from a terminal.
+Double-click:
+
+**`Azgaar's Fantasy Map Generator.Bat`**
+
+This opens a Windows GUI setup wizard that guides you through installation.
 
 ### What the Installer Does
 
 - 🖱️ **GUI installation wizard**
-- 📁 **Choose installation directory**
-- 🟢 **Automatically installs local Node.js 24+**
-- 🔐 **Verifies the Node.js download with SHA-256**
+- 📁 **Lets you choose the installation directory**
+- 🟢 **Automatically installs a local Node.js 24+ runtime**
+- 🔐 **Verifies the Node.js download using SHA-256**
 - 📦 **Automatically runs `npm install`**
-- ▶️ **Creates a reusable launcher**
+- ▶️ **Creates a reusable local launcher**
 - 🔧 **Repair installation**
 - 🗑️ **Uninstall**
-- 🗺️ **Preserves maps and user assets during Repair**
+- 🗺️ **Preserves maps and common user assets during Repair**
 - 🚫 **Does not install Node.js system-wide**
 
-When needed, the installer can use the repository already downloaded or download the original upstream repository, and it starts the project with `npm run dev`.
+The repository, Node.js runtime and npm dependencies are kept together inside the selected installation folder.
+
+When the installer is run from a downloaded copy of this fork, it can install from those existing repository files. If the required project files are unavailable, the installer can download the original upstream **Azgaar Fantasy Map Generator** repository.
+
+The installer uses the local Node.js runtime to install the required npm dependencies and runs the generator through `npm run dev`.
+
+### Starting the Generator
+
+You will need to seperately download and copy the following file from this repo after installation (this is because the installer clones Azgaar's orignal repo, to stay up to date to any changes, not this fork, which only exists to archive Azgaar's repo as of 04/10/2026, apart from holding the installer and lancher files): 
+
+**`Start Azgaar's Fantasy Map Generator.Bat`**
+
+Simply Double-click it to launch the map generator.
+
+The launcher:
+
+- 🔎 Checks that the Fantasy Map Generator installation is present
+- 🟢 Uses the locally installed Node.js runtime
+- ▶️ Runs `npm run dev`
+- 🌐 Opens the generator in your default browser (You can also copy and paste the local host address to open the map generator in any browser after launch)
+- 🚫 Does not require a system-wide Node.js installation
+
+Keep the launcher window open while using the generator. Closing it stops the local development server.
+
+If the installation has been moved, damaged or is missing its local Node.js runtime, run **`Azgaar's Fantasy Map Generator.Bat`** again and choose **Repair**.
+
+> **Install once. Start with a double-click afterwards.**
 
 **Made to make things easy for me, now sharing to make things easy for you.**
 
 ### Vibe Code Alert
 
-The installer was created with assistance from **GPT-5.6 Sol**.
+The AonzOG Windows installer and launcher were created with assistance from **GPT-5.6 Sol**.
 
-It has **not** undergone an independent security audit or comprehensive static and dynamic cybersecurity assessment. The installer is plain-text Batch/PowerShell code, so you can review what it does before running it.
+They have **not** undergone an independent security audit or comprehensive static and dynamic cybersecurity assessment.
 
-**`Azgaar's Fantasy Map Generator.Bat` is provided as-is and should be used at your own risk.**
+Both helper tools are plain-text Batch/PowerShell code, so you can inspect what they do before running them.
+
+**The AonzOG Windows helper scripts are provided as-is and should be used at your own risk.**
 
 ### Licence
 
 **Azgaar's Fantasy Map Generator** remains Azgaar's project and remains under its upstream **MIT licence**.
 
-The AonzOG installer file, **`Azgaar's Fantasy Map Generator.Bat`**, is released under **The Unlicense**. Feel free to use it, modify it, improve it, or share it.
+The AonzOG Windows helper files are separate additions to the fork.
+
+**`Azgaar's Fantasy Map Generator.Bat`** and **Start Azgaar's Fantasy Map Generator.Bat** are released under **The Unlicense**. Feel free to use it, modify it, improve it or share it.
+
+---
 
 ---
 
