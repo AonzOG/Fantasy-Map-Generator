@@ -58,7 +58,7 @@ The data layer must contain no logic and no rendering code. Generators implement
 # AonzOG's Fork - 04/10/2026
 ## Azgaar's Fantasy Map Generator Installer.Bat
 
-** Few Clicks Installation
+Few Clicks Installation
 
 Used GPT-5.6 Sol to vibe code a installation.bat file that opens an installation wizard GUI and automatically downloads and installs the original Repo and it's dependencies.
 
