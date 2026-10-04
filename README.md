@@ -55,10 +55,10 @@ UI → editors → world data → renderer.
 The data layer must contain no logic and no rendering code. Generators implement the procedural world simulation. Editors implement interactive editing tools used by the user. They perform controlled mutations of the world state. Editors can be viewed as interactive generators. The renderer converts the world state into SVG or WebGl graphics. Renderer must be pure visualization step and not modify world data.
 
 
-## AonzOG's Fork - 04/10/2026
-# Azgaar's Fantasy Map Generator Installer.Bat
+# AonzOG's Fork - 04/10/2026
+## Azgaar's Fantasy Map Generator Installer.Bat
 
-Few Clicks Installation
+** Few Clicks Installation
 
 Used GPT-5.6 Sol to vibe code a installation.bat file that opens an installation wizard GUI and automatically downloads and installs the original Repo and it's dependencies.
 
