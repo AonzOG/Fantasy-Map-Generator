@@ -1,5 +1,43 @@
 # Fantasy Map Generator
 
+## AonzOG's Fork - 04/10/2026
+
+This fork keeps **Azgaar's Fantasy Map Generator** as the underlying project and adds a Windows setup helper: **`Azgaar's Fantasy Map Generator.Bat`**.
+
+### Few-Click Windows Installation
+
+Double-click the `.Bat` file to open a GUI setup wizard instead of manually setting up the project from a terminal.
+
+The installer can:
+
+- Install, Repair, or Uninstall the local setup.
+- Let you choose the installation directory.
+- Use the repository already downloaded when available, or download the original upstream repository when needed.
+- Download and install a **local Node.js 24.x runtime** inside the installation folder, without installing Node.js system-wide.
+- Verify the downloaded Node.js archive using **SHA-256**.
+- Run `npm install` to install the project's npm dependencies.
+- Create a reusable **`Run Azgaar's Fantasy Map Generator.bat`** launcher.
+- Start the project with `npm run dev`.
+- Preserve `.map` files and common user-asset folders during Repair.
+
+**Made to make things easy for me, now sharing to make things easy for you.**
+
+### Vibe Code Alert
+
+The installer was created with assistance from **GPT-5.6 Sol**.
+
+It has **not** undergone an independent security audit or comprehensive static and dynamic cybersecurity assessment. The installer is plain-text Batch/PowerShell code, so you can review what it does before running it.
+
+**`Azgaar's Fantasy Map Generator.Bat` is provided as-is and should be used at your own risk.**
+
+### Licence
+
+**Azgaar's Fantasy Map Generator** remains Azgaar's project and remains under its upstream **MIT licence**.
+
+The AonzOG installer file, **`Azgaar's Fantasy Map Generator.Bat`**, is released under **The Unlicense**. Feel free to use it, modify it, improve it, or share it.
+
+---
+
 Azgaar's _Fantasy Map Generator_ is a free web application that helps fantasy writers, game masters, and cartographers create and edit fantasy maps.
 
 Link: [azgaar.github.io/Fantasy-Map-Generator](https://azgaar.github.io/Fantasy-Map-Generator).
@@ -53,24 +91,3 @@ settings → generators → world data → renderer
 UI → editors → world data → renderer.
 
 The data layer must contain no logic and no rendering code. Generators implement the procedural world simulation. Editors implement interactive editing tools used by the user. They perform controlled mutations of the world state. Editors can be viewed as interactive generators. The renderer converts the world state into SVG or WebGl graphics. Renderer must be pure visualization step and not modify world data.
-
-
-# AonzOG's Fork - 04/10/2026
-## Azgaar's Fantasy Map Generator.Bat
-
-Few Clicks Installation
-
-A .bat file that opens a Wizard GUI installer that automatically downloads and installs the original Repo and it's dependencies in a few steps.
-
-Made to make things easy for me, now sharing to make things easy for you.
-
-## Vibe Code Alert
-
-Used GPT-5.6 Sol to vibe code, so use with caution at own risk.
-No static and dynamic cybersecurity and vulnerability assesment has been done.
-Azgaar's Fantasy Map Generator.Bat is provided on an as is basis.
-
-## License
-Azgaar's Product is Azgaar's and under Azgaar's license.
-
-The Unlicense - Feel free to use the vibe coded Azgaar's Fantasy Map Generator.Bat however you like - improve and share if you want.
