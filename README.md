@@ -5,7 +5,7 @@
 This fork keeps **Azgaar's Fantasy Map Generator** as the underlying project and adds two Windows convenience tools:
 
 - 🛠️ **`Azgaar's Fantasy Map Generator.Bat`** — GUI installer, repair and uninstall tool
-- ▶️ **`Start Azgaar's Fantasy Map Generator.Bat`** — one-click launcher for starting the installed generator
+- ▶️ **`Start Azgaar's Fantasy Map Generator.Bat`** — optional standalone one-click launcher for starting the installed generator
 
 The aim is simple: **install and run the local version of Fantasy Map Generator with a few clicks instead of setting everything up manually through a terminal.**
 
@@ -38,13 +38,21 @@ The installer uses the local Node.js runtime to install the required npm depende
 
 ### Starting the Generator
 
-You will need to seperately download and copy the following file from this repo after installation (this is because the installer clones Azgaar's orignal repo, to stay up to date to any changes, not this fork, which only exists to archive Azgaar's repo as of 04/10/2026, apart from holding the installer and launcher files): 
+After installation, the installer automatically creates:
+
+**`Run Azgaar's Fantasy Map Generator.bat`**
+
+Simply double-click it to launch the map generator.
+
+This fork also contains:
 
 **`Start Azgaar's Fantasy Map Generator.Bat`**
 
-Simply Double-click it to launch the map generator.
+This is a separate optional launcher and is not required for normal use. It can be separately downloaded from this fork and copied into the installed Fantasy Map Generator root folder, next to `package.json`.
 
-The launcher:
+It may be useful as an alternative or replacement launcher if the installer-created `Run Azgaar's Fantasy Map Generator.bat` is unavailable, deleted, damaged, or if the installation folder has been moved.
+
+The `Start` launcher:
 
 - 🔎 Checks that the Fantasy Map Generator installation is present
 - 🟢 Uses the locally installed Node.js runtime
