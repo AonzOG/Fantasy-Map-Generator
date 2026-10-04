@@ -8,17 +8,20 @@ This fork keeps **Azgaar's Fantasy Map Generator** as the underlying project and
 
 Double-click the `.Bat` file to open a GUI setup wizard instead of manually setting up the project from a terminal.
 
-The installer can:
+### What the Installer Does
 
-- Install, Repair, or Uninstall the local setup.
-- Let you choose the installation directory.
-- Use the repository already downloaded when available, or download the original upstream repository when needed.
-- Download and install a **local Node.js 24.x runtime** inside the installation folder, without installing Node.js system-wide.
-- Verify the downloaded Node.js archive using **SHA-256**.
-- Run `npm install` to install the project's npm dependencies.
-- Create a reusable **`Run Azgaar's Fantasy Map Generator.bat`** launcher.
-- Start the project with `npm run dev`.
-- Preserve `.map` files and common user-asset folders during Repair.
+- 🖱️ **GUI installation wizard**
+- 📁 **Choose installation directory**
+- 🟢 **Automatically installs local Node.js 24+**
+- 🔐 **Verifies the Node.js download with SHA-256**
+- 📦 **Automatically runs `npm install`**
+- ▶️ **Creates a reusable launcher**
+- 🔧 **Repair installation**
+- 🗑️ **Uninstall**
+- 🗺️ **Preserves maps and user assets during Repair**
+- 🚫 **Does not install Node.js system-wide**
+
+When needed, the installer can use the repository already downloaded or download the original upstream repository, and it starts the project with `npm run dev`.
 
 **Made to make things easy for me, now sharing to make things easy for you.**
 
