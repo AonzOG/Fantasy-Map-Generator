@@ -60,10 +60,17 @@ The data layer must contain no logic and no rendering code. Generators implement
 
 Few Clicks Installation
 
-Used GPT-5.6 Sol to vibe code a installation.bat file that opens an installation wizard GUI and automatically downloads and installs the original Repo and it's dependencies.
+A .bat file that opens a Wizard GUI installer that automatically downloads and installs the original Repo and it's dependencies in a few steps.
 
-Did it to make things easy for me. 
+Made to make things easy for me, now sharing to make things easy for you.
 
-Feel free to use the installer - The Unlicense.
+## Vibe Code Alert
 
-Azgaar's Product is under Azgaar's license.
+Used GPT-5.6 Sol to vibe code, so use with caution at own risk.
+No static and dynamic cybersecurity and vulnerability assesment has been done.
+Azgaar's Fantasy Map Generator.Bat is provided on an as is basis.
+
+## License
+Azgaar's Product is Azgaar's and under Azgaar's license.
+
+The Unlicense - Feel free to use the vibe coded Azgaar's Fantasy Map Generator.Bat however you like - improve and share if you want.
