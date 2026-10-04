@@ -38,7 +38,7 @@ The installer uses the local Node.js runtime to install the required npm depende
 
 ### Starting the Generator
 
-You will need to seperately download and copy the following file from this repo after installation (this is because the installer clones Azgaar's orignal repo, to stay up to date to any changes, not this fork, which only exists to archive Azgaar's repo as of 04/10/2026, apart from holding the installer and lancher files): 
+You will need to seperately download and copy the following file from this repo after installation (this is because the installer clones Azgaar's orignal repo, to stay up to date to any changes, not this fork, which only exists to archive Azgaar's repo as of 04/10/2026, apart from holding the installer and launcher files): 
 
 **`Start Azgaar's Fantasy Map Generator.Bat`**
 
